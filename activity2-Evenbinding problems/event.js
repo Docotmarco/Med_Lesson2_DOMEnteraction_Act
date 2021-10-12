@@ -8,23 +8,27 @@ let app= Vue.createApp({
          }
     },
     methods:{
+
+        alert_mode(event){
+            event.preventDefault();
+             alert('thank you for alerting me!');
+         },
+
         confirminput1(){
             this.confirmedname=this.name;
         },
         confirminput2(){
             this.confirmedname2=this.name;
         },
-        setname(event,lastname){
-            this.name=event.target.value +' '+lastname;
+        setname(event){
+            //by pressing the keydown 
+            this.name=event.target.value ;
         },
         setname2(event){
+            //by pressing the enter
             this.name=event.target.value;
         },
-        alert_mode(event){
-           event.preventDefault();
-            alert('thank you for alerting me!')
-            
-        }
+       
     }
 });
 app.mount("#assignment");
