@@ -14,7 +14,8 @@ body{
     height: 500px;
     margin-left:0px;
     margin-top: 5px;
-    
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     color:rgb(134, 0, 134);
@@ -25,6 +26,8 @@ p{
     padding:15px;
     border-radius:50rem;
     color: aliceblue;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 img{
     width: 150px;
