@@ -8,12 +8,10 @@ let app= Vue.createApp({
          }
     },
     methods:{
-
         alert_mode(event){
             event.preventDefault();
              alert('thank you for alerting me!');
          },
-
         confirminput1(){
             this.confirmedname=this.name;
         },
