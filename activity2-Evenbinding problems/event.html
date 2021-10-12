@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Events</h1>
+    </header>
+    <section id="assignment">
+        <h2><br>Event practice</h2><hr/>
+        <!--1. ) Show an alert.(any text of your choice) when the button is pressed-->
+        <button v-on:click.prevent="alert_mode">Show alert</button>
+        <hr>
+        <!--2.) register the user input on key down and output in it the paragraph (hint.target.value)-->
+        <input type="text" v-on:input="setname($event,'Docot')" v-on:keyup.enter="confirminput1" placeholder="User register">
+        <p>OUTPUT 1: {{ confirmedname}}</p>
+        <hr/>
+        <!--3.)Reapet 2 but only output the entered value if the EnTER key was press-->
+        <input type="text"  v-on:input="setname2($event)" v-on:keyup.enter="confirminput2">
+        <p >OUTPUT 2:{{ confirmedname2 }}</p>
+    </section>
 </body>
 </html>
