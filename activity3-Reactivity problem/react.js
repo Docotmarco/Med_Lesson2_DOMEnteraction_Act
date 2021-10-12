@@ -7,19 +7,16 @@ var app=Vue.createApp({
         // result:'Result'
       }
     },
-    
     methods:{
       add(num){
         this.counter=this.counter+num;
          },
      },
      watch:{
-     counter(value){
-       
+     counter(value){ 
         if(value >37 || value <1){
-         
          const val= this;
-         setTimeout(function() {val.counter=0;},5000);
+          setTimeout(function() {val.counter=0;},5000);
         }else{
            return 0;
         }
@@ -27,7 +24,6 @@ var app=Vue.createApp({
      },
     computed:{
       output(){  
-
         if(this.counter>37){
           return 'Too much!';
         }
