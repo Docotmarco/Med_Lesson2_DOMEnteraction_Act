@@ -16,7 +16,7 @@ var app=Vue.createApp({
      counter(value){ 
         if(value >37 || value <1){
          const val= this;
-          setTimeout(function() {val.counter=0;},5000);
+          setTimeout(function() {val.counter=0;},9000);
         }else{
            return 0;
         }
