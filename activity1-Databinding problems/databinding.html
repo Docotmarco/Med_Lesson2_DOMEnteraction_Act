@@ -10,6 +10,22 @@
     <title>DATA BINDING</title>
 </head>
 <body>
-    
+    <section id="id_section">
+         <!--output your name-->
+         <h1 >{{name}}</h1>
+         <!--output your age-->
+         <p >{{age}}</p>
+         <!--output your age + 5-->
+         <p  > {{add_age()}}</p>
+         <!--output a ramdum number-->
+         <p>{{add_addrandum()}}</p>
+         <div>
+             <!--display some image you found via google-->
+             <img v-bind:src="img_link"/>
+         </div>
+         <!--prepopulate the input field with your name via the "value" attribute-->
+         Input:<input type="text" v-on:input="set_name"><br>
+        
+    </section>
 </body>
 </html>
