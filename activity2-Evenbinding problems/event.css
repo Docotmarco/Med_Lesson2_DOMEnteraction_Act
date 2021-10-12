@@ -1,0 +1,95 @@
+body{
+    
+    text-align: center;
+    background-color: rgb(245, 243, 243);
+     color:rgb(5, 5, 5);
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+header{
+    
+    background-color: rgb(12, 150, 0);
+    padding:5px;
+    color:white;
+    border-radius: 10px;
+    margin-left: 105px;
+    margin-right: 90px;
+    width: 400px;
+    box-shadow: 1px 2px 12px 1px rgb(15, 13, 13);
+    
+}
+h2{
+    color:rgb(13, 8, 19);
+}
+button{
+    background-color: red;
+    padding:5px;
+    border-radius: 5px;
+}
+input{
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color:  rgb(0, 126, 0);
+    -moz-outline-radius: 8px;
+}
+p{
+    background-color: rgb(94, 156, 94);
+    padding:8px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+}
+#assignment{
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    margin-left: 110px;
+    margin-right: 120px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 1px 2px 12px 0 rgb(15, 13, 13);
+  
+}
+
+/* #assignment:after{
+    background: linear-gradient(green,yellow,orange,maroon); */
+/* } */
+button:hover{
+    opacity: 0.9;
+    
+    
+    transition: 0.2s;
+    transition-timing-function: ease;
+    background-image:linear-gradient( to right, green,orange);
+}
+@media screen and (max-width: 800px){
+    header #assignment{
+        text-align: center;
+    }
+    input{
+        width: 80%;
+    }
+    button{
+        width: 60%;
+        margin-right: 0;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (min-width: 900px){
+     .container{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 1170px){
+    .container{
+       width: 40%;
+   }
+   
+}
+
